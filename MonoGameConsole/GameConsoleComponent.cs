@@ -29,7 +29,7 @@ namespace MonoGameConsole
             inputProcesser.Close += (s, e) => renderer.Close();
 
             renderer = new Renderer(game, spriteBatch, inputProcesser);
-            var inbuiltCommands = new IConsoleCommand[] { new ClearScreenCommand(inputProcesser), new ExitCommand(game), new HelpCommand() };
+            var inbuiltCommands = new IConsoleCommand[] { new ClearScreenCommand(inputProcesser), new HelpCommand() };
             GameConsoleOptions.Commands.AddRange(inbuiltCommands);
         }
 

@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>MonoGameConsole</RootNamespace>
     <AssemblyName>MonoGameConsole</AssemblyName>
-    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -52,7 +52,6 @@
     <Compile Include="Commands\ClearScreenCommand.cs" />
     <Compile Include="Commands\CommandComparer.cs" />
     <Compile Include="Commands\CustomCommand.cs" />
-    <Compile Include="Commands\ExitCommand.cs" />
     <Compile Include="Commands\HelpCommand.cs" />
     <Compile Include="GameConsole.cs" />
     <Compile Include="GameConsoleComponent.cs" />
