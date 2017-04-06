@@ -41,11 +41,19 @@ namespace MonoGameConsole
             GameConsoleOptions.Commands = commands.ToList();
             Enabled = true;
             console = new GameConsoleComponent(this, game, spriteBatch);
-            game.Services.AddService(typeof(GameConsole), this);
-            game.Components.Add(console);
+            //game.Services.AddService(typeof(GameConsole), this);
+            //game.Components.Add(console);
         }
 
-     
+        public void Update(GameTime gameTime)
+        {
+            this.console.Update(gameTime);
+        }
+
+        public void Draw(GameTime gameTime)
+        {
+            this.console.Draw(gameTime);
+        }
 
         /// <summary>
         /// Write directly to the output stream of the console
